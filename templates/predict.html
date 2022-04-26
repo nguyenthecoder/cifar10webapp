@@ -1,0 +1,11 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h3>image path: {{ data['image'] }}</h3>
+        <img height="500" width="500" src="{{ '/static/' + data['image'] }}" alt="not found"/>
+        <h3>Prediction: {{ data['label'] }}</h3>
+    </body>
+</html>

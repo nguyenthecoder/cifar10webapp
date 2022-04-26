@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript" src="{{ url_for('static', filename='test.js') }}"></script>
+
+    </head>
+
+    <body>
+        <h3>Conditional Render test page</h3>
+        <h3>Test score for {{ data['name'] }}</h3>
+        <div>
+            {% if data['score'] > 50 %}
+                <h3>Passed with score: {{data['score']}}</h3>
+            {% else %}
+                <h3>Not pass with score: {{data['score']}}</h3>
+            {% endif %}
+        </div>
+    </body>
+
+    <button onclick="hello()">Call js file</button>
+</html>
